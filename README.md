@@ -30,8 +30,7 @@ MailFusion is a Gmail clone built with React, Redux, and Firebase. It provides a
     npm install
 
 4. Set up Firebase:
-
-  a. Create a Firebase project at Firebase Console
+  Create a Firebase project at Firebase Console.
 
 5. Start the development server:
    ```bash
