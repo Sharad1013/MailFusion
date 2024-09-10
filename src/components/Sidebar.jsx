@@ -38,7 +38,6 @@ const sidebarItems = [
 ];
 
 const Sidebar = () => {
-  // const [open, setOpen] = useState(false); // this is local state variable but we need this in the sendMail Component as if it is true then only the compose component should appear. To deal these kind of situations we need redux.
   const dispatch = useDispatch();
   return (
     <div className="w-[15%]">
