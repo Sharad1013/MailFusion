@@ -11,9 +11,7 @@ const Messages = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // using query just to order the mails (most recent at the top)
     const q = query(collection(db, "emails"), orderBy("createdAt", "desc"));
-    // const unsubscribe = onSnapshot(collection(db, "emails"), (snapshot) => {
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const allEmails = snapshot.docs.map((doc) => ({
         ...doc.data(),
